@@ -24,6 +24,15 @@ class TimeTable{
     public void printTimeTable(){
         String heading=year+"-"+batch[year-1];
         System.out.println("timetable of year"+heading+"section"+section);
+        for(String d:day){
+            System.out.println(d+":");
+            for(int p:period){
+                System.out.println("period"+p+";oopj");
+       
+            }
+            System.out.println();
+        }
+        
     }
 }
 public class A10 {
@@ -44,4 +53,4 @@ public class A10 {
     
 
 
-}
+  }
