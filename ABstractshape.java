@@ -31,7 +31,7 @@ class Triangle1 extends Shape1 {
         this.height = height;
     }
     double calculateArea() {
-        if (base > 0 && height > 0) { // Check if base and height are provided
+        if (base > 0 && height > 0) { 
             return 0.5 * base * height;
         } else { // Calculate using Heron's formula if sides are provided
             double s = (side1 + side2 + side3) / 2;
