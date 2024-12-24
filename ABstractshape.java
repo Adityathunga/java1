@@ -33,16 +33,16 @@ class Triangle1 extends Shape1 {
     double calculateArea() {
         if (base > 0 && height > 0) { 
             return 0.5 * base * height;
-        } else { // Calculate using Heron's formula if sides are provided
+        } else {
             double s = (side1 + side2 + side3) / 2;
             return Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
         }
     }
     double calculatePerimeter() {
-        if (side1 > 0 && side2 > 0 && side3 > 0) { // Check if sides are provided
+        if (side1 > 0 && side2 > 0 && side3 > 0) {
             return side1 + side2 + side3;
         } else {
-            return -1; // Invalid for base-height triangles
+            return -1;
         }
     }
 }
